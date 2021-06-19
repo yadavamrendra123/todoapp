@@ -1,0 +1,20 @@
+{% extends 'myapp/main.html' %}
+{%block content%}
+
+<div class="header-bar">
+    <a href="/">&#8592;Back</a>
+    <h3> Task Form</h3>
+</div>
+
+
+<div class="card-body">
+
+<form method="POST" action="">
+    {%csrf_token%}
+    {{form.as_p}}
+<input class="button"type ="submit" value="Submit"> 
+
+
+</form>
+</div>
+{% endblock %}
